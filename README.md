@@ -5,6 +5,6 @@
 
 - [x] Set attributes
 - [x] Create a constructor and inside that inicialize the variables and build the frame
-- [x] Set a timer
+- [ ] Set a timer
 
 
