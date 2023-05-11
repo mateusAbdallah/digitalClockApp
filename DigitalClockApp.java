@@ -34,8 +34,8 @@ public class DigitalClockApp extends JFrame {
 		
 		timeLabel = new JLabel();
 		timeLabel.setFont(new Font("SANS SERIF", Font.PLAIN, 59));
-		timeLabel.setBackground(Color.BLACK);
-		timeLabel.setForeground(Color.WHITE);
+		timeLabel.setBackground(Color.DARK_GRAY);
+		timeLabel.setForeground(Color.RED);
 		timeLabel.setOpaque(true);
 		
 		dayLabel = new JLabel();
@@ -49,7 +49,29 @@ public class DigitalClockApp extends JFrame {
 		add(dateLabel);
 		setVisible(true);
 		
+		setTimer();
 		
+		
+	}
+	
+	public void setTimer() {
+		while(true) {
+			time = timeFormat.format(Calendar.getInstance().getTime());
+			timeLabel.setText(time);
+			
+			day = dayFormat.format(Calendar.getInstance().getTime());
+			dayLabel.setText(day);
+			
+			date = dateFormat.format(Calendar.getInstance().getTime());
+			dateLabel.setText(date);
+			
+			try {
+				Thread.sleep(1000);
+			} catch(Exception e) {
+				e.getStackTrace();
+			}
+			
+		}
 	}
 	
 
