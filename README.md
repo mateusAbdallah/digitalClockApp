@@ -5,6 +5,9 @@
 
 - [x] Set attributes
 - [x] Create a constructor and inside that inicialize the variables and build the frame
-- [ ] Set a timer
+- [x] Set a timer
 
+#
+
+![image](https://github.com/mateusAbdallah/digitalClockApp/assets/92052001/044f3672-e12b-4e39-925c-0c5cec1cc58a)
 
